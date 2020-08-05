@@ -2,9 +2,9 @@
 #!desc=Remove TikTok's regional restrictions.
 
 [URL Rewrite]
-(?<=_region=)CN(?=&) US 307
-(?<=&app_version=)16..(?=.?.?&) 1 307
+(?<=_region=)CN(?=&) url 307
+(?<=&app_version=)16..(?=.?.?&) url 307
+(?<=\?version_code=)16..(?=.?.?&) url 307
 
-(?<=\?version_code=)16..(?=.?.?&) 1 307
 [MITM]
-hostname = %INSERT% *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com
+hostname = *.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com
