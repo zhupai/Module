@@ -1,0 +1,26 @@
+#!MANAGED-CONFIG https://api.darkssl.com/v1/cfg/s5i5ib3yno4y4kg/surge/Crown.conf interval=86400 strict=false
+[General]
+loglevel = notify
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 193.168.0.0/24, 10.0.0.0/8, 17.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
+port = 1235
+socks-port = 1234
+http-listen = 127.0.0.1:1235
+socks5-listen = 127.0.0.1:1234
+dns-server = system, 114.114.114.114
+exclude-simple-hostnames = true
+always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com
+
+[Proxy]
+🇯🇵JP-BBTEC = https, jp-yh-s711.sslnode.com, 8443, eiypai, pJmwE6PA
+🇯🇵JP-BBTEC2 = https, jp-yh-s712.sslnode.com, 8443, eiypai, pJmwE6PA
+🇯🇵JP-IIJ = https, jp-gmo-s502.sslnode.com, 8443, eiypai, pJmwE6PA
+🇯🇵JP-AWS x0.4 = https, jp-aws-s118.sslnode.com, 8443, eiypai, pJmwE6PA
+🇭🇰HK-HKBN x0.4 = https, hk-hkbn-s984.sslnode.com, 8443, eiypai, pJmwE6PA
+🇭🇰HK-HKBN2 x0.4 = https, hk-hkbn-s985.sslnode.com, 8443, eiypai, pJmwE6PA
+🇰🇷KR-CN2 x0.6 = https, kr-or-s721.sslnode.com, 8443, eiypai, pJmwE6PA
+🇺🇸US-CN2 x0.7 = https, us-c3-s023.sslnode.com, 8443, eiypai, pJmwE6PA
+🇺🇸US-CN2_2 x0.7 = https, us-gg-s911.sslnode.com, 8443, eiypai, pJmwE6PA
+🇺🇸US-CN2_3 x0.7 = https, us-gg-s912.sslnode.com, 8443, eiypai, pJmwE6PA
+🇭🇰HK-Ali x0.8 = https, hk-ali-s013.sslnode.com, 8443, eiypai, pJmwE6PA
+🇭🇰HK-Azure = https, hk-az-s190.sslnode.com, 8443, eiypai, pJmwE6PA
+🇭🇰HK-Azure2 = https, hk-az-s191.sslnode.com, 8443, eiypai, pJmwE6PA
